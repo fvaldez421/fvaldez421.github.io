@@ -10,12 +10,12 @@ class Header extends Component {
 			<div className="jumbotron jumbotron-fluid">
 				<div className="container mid">
 					<nav className="navbar navbar-expand">
-						<h1>About</h1>	
+						<h1>Frank Valdez</h1>	
 						<div className="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul className="navbar-nav ml-auto">
-								<li className="nav-item"><a className="nav-link" href="/">About</a></li>
-								<li className="nav-item"><a className="nav-link" href="/work">Projects</a></li>
-								<li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
+								<li className="nav-item"><a className="nav-link" href="/">GitHub</a></li>
+								<li className="nav-item"><a className="nav-link" href="/work">LinkedIn</a></li>
+								<li className="nav-item"><a className="nav-link" href="/contact">Email</a></li>
 							</ul>
 						</div>
 					</nav>

@@ -19,7 +19,7 @@ class App extends Component {
 					</div>
 
 					<div className="row">
-						<div className="col-md-10 body mid">
+						<div className="col-md-12 body mid">
 							<Route exact path="/" component={ About } />
 							<Route exact path="/work" component={ Work } />
 							<Route exact path="/contact" component={ Contact } />

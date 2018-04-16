@@ -7,15 +7,15 @@ const Links = (props) => (
 	<div className="links">
 		<div className="row">
 			<div className="col-md-4">
-				<p className="nav-item link"><a className="nav-item link" href="/">LinkedIn</a></p>
+				<p className="nav-item link"><a className="nav-item link" href="/">About</a></p>
 			</div>
 
 			<div className="col-md-4">
-				<p className="nav-item link"><a className="nav-item link" href="/work">GitHub</a></p>
+				<p className="nav-item link"><a className="nav-item link" href="/work">Projects</a></p>
 			</div>
 
 			<div className="col-md-4">
-				<p className="nav-item link"><a className="nav-item link" href="/contact">Email</a></p>
+				<p className="nav-item link"><a className="nav-item link" href="/contact">Contact</a></p>
 			</div>
 		</div>
 	</div>

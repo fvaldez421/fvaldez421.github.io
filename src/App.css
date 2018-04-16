@@ -12,8 +12,9 @@
 }
 
 .background {
-
+	background-color: lightgrey;
 }
+
 .mid {
 	margin: auto;
 	margin-top: 5%;
@@ -22,7 +23,6 @@
 
 .body {
 	background-color: #707d8a;
-	opacity: .9;
 }
 
 @keyframes App-logo-spin {

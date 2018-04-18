@@ -15,5 +15,6 @@ h1 {
 .nav-link {
 	color: #f1f1f1;
 	font-size: 20px;
+	text-shadow: 0px 0px 6px black;
 }
 

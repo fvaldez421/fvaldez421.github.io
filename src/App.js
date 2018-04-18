@@ -13,16 +13,20 @@ class App extends Component {
 			<Router>
 				<div className="App background">
 
-					<div className="row header">
+					<div className="row">
 						<Header />
 						<Links />
 					</div>
 
 					<div className="row">
-						<div className="col-md-12 body mid">
-							<Route exact path="/" component={ About } />
-							<Route exact path="/work" component={ Work } />
-							<Route exact path="/contact" component={ Contact } />
+						<div className="col-md-12 body">
+							<div className="row">
+								<div className="col-md-10 mid">
+									<Route exact path="/" component={ About } />
+									<Route exact path="/work" component={ Work } />
+									<Route exact path="/contact" component={ Contact } />
+								</div>
+							</div>
 						</div>					
 					</div>
 

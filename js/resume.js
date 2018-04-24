@@ -25,4 +25,49 @@
     target: '#sideNav'
   });
 
+  // Sets below variabes to pertaining project and runs popover
+  $(".link").hover(function() {
+    var id = $(this).attr("id");
+    var depl = $(this).attr("depl");
+    var git = $(this).attr("git");
+    var dBtn = "<a href=" + depl + "><button class='btn btn-success'>Deployed</button></a>";
+    var gBtn = "<a href=" + git + "><button class='btn btn-secondary'>GitHub</button></a>";
+    var counter;
+
+  // Starts popover with manual trigger (mouseenter and mouseleave)
+    $("#" + id).popover({ 
+      trigger: "manual",
+      placement: "right",
+      html: true,
+      content: dBtn + " " + gBtn,
+      container: "body"
+    }).on("mouseenter", function() {
+      var _this = this; 
+
+      clearTimeout(counter);
+      $("#" + id).not(_this).popover("hide");
+
+      counter = setTimeout(function() {
+        if ($(_this).is(":hover")) {
+          $(_this).popover("show");
+        }
+        $(".popover").on("mouseleave", function() {
+          $("#" + id).popover("hide");
+        });
+      }, 400);
+
+    }).on("mouseleave", function() {
+      var _this = this;
+
+      setTimeout(function() {
+        if (!$(".popover:hover").length) {
+          if (!$(_this).is(":hover")) {
+            $(_this).popover("hide");
+          }
+        }
+      }, 200);
+
+    });
+  }); 
+
 })(jQuery); // End of use strict

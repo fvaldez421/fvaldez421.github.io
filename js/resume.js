@@ -48,7 +48,7 @@
       $("#" + id).not(_this).popover("hide");
 
       counter = setTimeout(function() {
-        if ($(_this).is(":hover")) {
+        if ($(_this).is(":hover") === true) {
           $(_this).popover("show");
         }
         $(".popover").on("mouseleave", function() {
@@ -60,8 +60,8 @@
       var _this = this;
 
       setTimeout(function() {
-        if (!$(".popover:hover").length) {
-          if (!$(_this).is(":hover")) {
+        if (($(".popover:hover").length) === false) {
+          if (($(_this).is(":hover")) === false) {
             $(_this).popover("hide");
           }
         }

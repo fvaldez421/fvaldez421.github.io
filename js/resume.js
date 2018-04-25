@@ -28,10 +28,13 @@
   // Sets below variabes to pertaining project and runs popover
   $(".link").hover(function() {
     var id = $(this).attr("id");
-    var depl = $(this).attr("depl");
+    var dep = $(this).attr("dep");
     var git = $(this).attr("git");
-    var dBtn = "<a href=" + depl + "><button class='btn btn-success'>Deployed</button></a>";
-    var gBtn = "<a href=" + git + "><button class='btn btn-secondary'>GitHub</button></a>";
+    var dBtn = "<a href=" + dep + " target='_blank'><button class='btn btn-success'>Deployed</button></a>" + " ";
+    var gBtn = "<a href=" + git + " target='_blank'><button class='btn btn-secondary'>GitHub</button></a>";
+    if (dep === undefined) {
+      dBtn = "";
+    }
     var counter;
 
   // Starts popover with manual trigger (mouseenter and mouseleave)
@@ -39,7 +42,7 @@
       trigger: "manual",
       placement: "right",
       html: true,
-      content: dBtn + " " + gBtn,
+      content: dBtn + gBtn,
       container: "body"
     }).on("mouseenter", function() {
       var _this = this; 

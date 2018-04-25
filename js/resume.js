@@ -25,8 +25,21 @@
     target: '#sideNav'
   });
 
+  var mobile = function () {
+      if (!window.matchMedia) {
+        return false;
+      }
+      if (window.matchMedia("(max-width: 992px)").matches) {
+        return true;
+      }
+      return false;
+  }
+
+
   // Sets below variabes to pertaining project and runs popover
   $(".link").hover(function() {
+    var trigger;
+    var counter;
     var id = $(this).attr("id");
     var dep = $(this).attr("dep");
     var git = $(this).attr("git");
@@ -35,7 +48,11 @@
     if (dep === undefined) {
       dBtn = "";
     }
-    var counter;
+    if (mobile) {
+      trigger = "click";
+    }else {
+        trigger = "manual";
+    }
 
   // Starts popover with manual trigger (mouseenter and mouseleave)
     $("#" + id).popover({ 

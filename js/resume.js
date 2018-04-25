@@ -63,7 +63,7 @@
       var _this = this;
 
       setTimeout(function() {
-        if (($(".popover:hover").length) === false) {
+        if (($(".popover:hover").length) <= 0 ) {
           if (($(_this).is(":hover")) === false) {
             $(_this).popover("hide");
           }

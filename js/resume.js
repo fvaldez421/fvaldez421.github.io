@@ -63,10 +63,9 @@
       var _this = this;
 
       setTimeout(function() {
-        if (($(".popover:hover").length) <= 0 ) {
-          if (($(_this).is(":hover")) === false) {
+        if ($(".popover:hover").length <= 0 && !$(_this).is(":hover")) {
             $(_this).popover("hide");
-          }
+          
         }
       }, 200);
 

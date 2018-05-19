@@ -64,17 +64,12 @@
     }).on("mouseenter", function() {
       var _this = this; 
 
-      clearTimeout(counter);
-      $("#" + id).not(_this).popover("hide");
-
-      counter = setTimeout(function() {
         if ($(_this).is(":hover") === true) {
           $(_this).popover("show");
         }
         $(".popover").on("mouseleave", function() {
           $("#" + id).popover("hide");
         });
-      }, 400);
 
     }).on("mouseleave", function() {
       var _this = this;

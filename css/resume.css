@@ -7,7 +7,7 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem;
+    padding-left: 20%;
   }
 }
 
@@ -72,7 +72,7 @@ h2 {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 20%;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -81,8 +81,8 @@ h2 {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 100%;
+    max-height: auto;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {

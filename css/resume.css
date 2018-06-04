@@ -91,7 +91,7 @@ h2 {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 100%;
+    max-width: 11rem;
     max-height: auto;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }

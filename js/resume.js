@@ -39,14 +39,17 @@
   // Sets below variabes to pertaining project and runs popover
   $(".link").hover(function() {
     var trigger;
-    var counter;
+    // var counter;
     var id = $(this).attr("id");
     var dep = $(this).attr("dep");
     var git = $(this).attr("git");
     var dBtn = "<a href=" + dep + " target='_blank'><button class='btn btn-success'>Deployed</button></a>" + " ";
     var gBtn = "<a href=" + git + " target='_blank'><button class='btn btn-secondary'>GitHub</button></a>";
-    if (dep === undefined) {
+    if (dep === undefined) { // conditionals for CLI or private repositories
       dBtn = "";
+    }
+    if (git === undefined) {
+      gBtn = "";
     }
     if (mobile) {
       trigger = "click";
@@ -54,7 +57,7 @@
         trigger = "manual";
     }
 
-  // Starts popover with manual trigger (mouseenter and mouseleave)
+    // Starts popover with manual trigger (mouseenter and mouseleave)
     $("#" + id).popover({ 
       trigger: "manual",
       placement: "right",
@@ -77,7 +80,6 @@
       setTimeout(function() {
         if ($(".popover:hover").length <= 0 && !$(_this).is(":hover")) {
             $(_this).popover("hide");
-          
         }
       }, 200);
 

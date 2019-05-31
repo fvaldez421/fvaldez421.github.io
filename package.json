@@ -1,6 +1,6 @@
 {
     "title": "Resume",
-    "name": "startbootstrap-resume",
+    "name": "resume",
     "version": "4.0.0",
     "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
     "keywords": [
@@ -31,6 +31,9 @@
         "sshpk": ">=1.13.2",
         "cryptiles": ">=4.1.2",
         "concat-with-sourcemaps": ">=1.0.6",
+        "lodash": ">=4.17.11",
+        "extend": ">=3.0.2",
+        "randomatic": ">=3.0.0",
         "jquery": ">=3.4.0",
         "simple-line-icons": "^2.4.1"
     },

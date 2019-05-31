@@ -63,8 +63,8 @@
     $(".link").hover(function () {
       var dep = $(this).attr("dep");
       var git = $(this).attr("git");
-      var dBtn = "<a href=" + dep + " target='_blank'><button class='btn btn-success'>Deployed</button></a>" + " ";
-      var gBtn = "<a href=" + git + " target='_blank'><button class='btn btn-secondary'>GitHub</button></a>";
+      var dBtn = "<a href=" + dep + " target='_blank' class='btn btn-success'>Deployed</a>" + " ";
+      var gBtn = "<a href=" + git + " target='_blank' class='btn btn-secondary'>GitHub</a>";
       if (dep === undefined) { // conditionals for CLI or private repositories
         dBtn = "";
       }

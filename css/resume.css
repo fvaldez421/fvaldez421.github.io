@@ -69,6 +69,53 @@ h2 {
   text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black;
 }
 
+.redux-custom {
+  background-image: url("https://redux.js.org/img/redux.svg");
+  background-repeat: no-repeat;
+  background-size: auto 44px;
+  background-position-x: 0;
+  filter: grayscale(100%);
+  height: 43px;
+  width: 44px;
+}
+
+.devicons.devicons-less {
+  font-size: 64px;
+  position: relative;
+  top: 7px;
+  margin: 0px -8px;
+}
+
+.gcp-custom {
+  background-image: url("https://cloud.google.com/_static/0a78ff57b6/images/cloud/cloud-logo.svg");
+  background-repeat: no-repeat;
+  background-size: auto 36px;
+  background-position-x: 3px;
+  filter: grayscale(100%);
+  height: 36px;
+  width: 52px;
+}
+
+.aws-custom {
+  background-image: url("https://a0.awsstatic.com/main/images/logos/aws_smile-header-desktop-en-white_59x35.png");
+  background-repeat: no-repeat;
+  background-size: auto 28px;
+  background-position-x: 0px;
+  filter: invert(100%) grayscale(100%);
+  height: 32px;
+  width: 50px;
+}
+
+.es-custom {
+  background-image: url("https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt280217a63b82a734/5bbdaacf63ed239936a7dd56/elastic-logo.svg");
+  background-repeat: no-repeat;
+  background-size: auto 40px;
+  background-position-x: 5px;
+  filter: grayscale(100%);
+  height: 40px;
+  width: 50px;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;

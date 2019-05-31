@@ -35,6 +35,7 @@
 
   // Sets below variabes to pertaining project and runs popover
   if (mobile) {
+    $("#titleInst").html("(Click titles for options)")
     $(".link").on("click", function () {
       var dep = $(this).attr("dep");
       var git = $(this).attr("git");

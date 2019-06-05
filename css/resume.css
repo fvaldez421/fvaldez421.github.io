@@ -185,6 +185,9 @@ section.resume-section {
 
 section.resume-section .resume-item .resume-date {
   min-width: none;
+}
+
+section.resume-section .resume-item .resume-date .text-primary {
   font-weight: 600;
 }
 

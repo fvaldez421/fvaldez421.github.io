@@ -6,7 +6,9 @@ section.resume-section {
     .resume-content {}
     .resume-date {
       min-width: none;
-      font-weight: 600;
+      .text-primary {
+        font-weight: 600;
+      } 
     }
   }
 }

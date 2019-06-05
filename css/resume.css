@@ -183,6 +183,10 @@ section.resume-section {
   padding-bottom: 5rem !important;
 }
 
+section.resume-section .resume-item .resume-content .subheading {
+  color: #01486a;
+}
+
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }

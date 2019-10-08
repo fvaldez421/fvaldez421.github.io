@@ -44,7 +44,7 @@ h2 {
 }
 
 .list-social-icons a:hover {
-  color: #01486a;
+  color: #111;
 }
 
 .list-social-icons a .fa-lg {
@@ -56,7 +56,7 @@ h2 {
 }
 
 .list-icons .list-inline-item i:hover {
-  color: #01486a;
+  color: #111;
 }
 
 .shad-1 {
@@ -137,6 +137,21 @@ h2 {
   text-transform: uppercase;
 }
 
+.glass-top {
+  background-image: linear-gradient(150deg, #ffffff10 0%, #ffffff44 18%, #ff000000 15%);
+}
+
+.glass-top:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: linear-gradient(150deg, #ff000000 80%, #ffffff10 20%, #ffffff44);
+  pointer-events: none;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -154,9 +169,9 @@ h2 {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 11rem;
+    max-width: 11.5rem;
     max-height: auto;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.3rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -212,17 +227,21 @@ section.resume-section .resume-item .resume-date .text-primary {
 }
 
 .bg-primary {
-  background-color: #01486a !important;
+  background-color: #111 !important;
 }
 
 .text-primary {
-  color: #01486a !important;
+  color: #111 !important;
+}
+
+.navbar {
+  padding: 0 !important;
 }
 
 a {
-  color: #01486a;
+  color: #111;
 }
 
 a:hover, a:focus, a:active {
-  color: #00151e;
+  color: black;
 }

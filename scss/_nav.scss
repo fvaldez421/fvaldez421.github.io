@@ -1,4 +1,5 @@
 #sideNav {
+  z-index: 1500;
   .navbar-brand {}
   .navbar-nav .nav-item .nav-link {
     font-weight: 600;
@@ -26,16 +27,14 @@
     position: fixed;
     top: 0;
     left: 0;
-
     display: flex;
     flex-direction: column;
-
     width: $sidebar-base-width;
     height: 100vh;
+    padding: 0!important;
     .navbar-brand {
       display: flex;
-
-      margin: auto auto 0;
+      margin: auto auto 2rem;
       padding: 0.5rem;
       .img-profile {
         max-width: 11.5rem;

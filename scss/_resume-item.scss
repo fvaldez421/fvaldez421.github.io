@@ -4,19 +4,40 @@ section.resume-section {
   padding-bottom: 5rem !important;
   .resume-item {
     .resume-content {
+      width: 100%;
       .subheading {
+        display: inline-block;
         color: $orange;
       }
     }
     .resume-date {
-      min-width: none;
-      .text-primary {
-        font-weight: 600;
-      } 
+      float: right;
+      text-align: right;
+      line-height: 1.8rem;
+      font-weight: 600;
+    }
+    .text-primary {
+      font-weight: 600;
+    } 
+  }
+}
+@media only screen and (max-width: 560px) {
+  section.resume-section {
+    min-height: 100vh;
+    .resume-item {
+      .resume-content {}
+      .subheading {
+        display: block;
+        margin: 0;
+      }
+      .resume-date {
+        float: none;
+        display: block;
+      }
     }
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
     .resume-item {
@@ -27,7 +48,7 @@ section.resume-section {
     }
   }
 }
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;

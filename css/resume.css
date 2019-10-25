@@ -132,6 +132,10 @@ h2 {
   width: 100%;
 }
 
+#sideNav {
+  z-index: 1500;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
@@ -162,10 +166,11 @@ h2 {
     flex-direction: column;
     width: 20%;
     height: 100vh;
+    padding: 0 !important;
   }
   #sideNav .navbar-brand {
     display: flex;
-    margin: auto auto 0;
+    margin: auto auto 2rem;
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
@@ -198,19 +203,41 @@ section.resume-section {
   padding-bottom: 5rem !important;
 }
 
+section.resume-section .resume-item .resume-content {
+  width: 100%;
+}
+
 section.resume-section .resume-item .resume-content .subheading {
+  display: inline-block;
   color: #01486a;
 }
 
 section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-section.resume-section .resume-item .resume-date .text-primary {
+  float: right;
+  text-align: right;
+  line-height: 1.8rem;
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+section.resume-section .resume-item .text-primary {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 560px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .subheading {
+    display: block;
+    margin: 0;
+  }
+  section.resume-section .resume-item .resume-date {
+    float: none;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
   }
@@ -219,7 +246,7 @@ section.resume-section .resume-item .resume-date .text-primary {
   }
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
@@ -232,10 +259,6 @@ section.resume-section .resume-item .resume-date .text-primary {
 
 .text-primary {
   color: #111 !important;
-}
-
-.navbar {
-  padding: 0 !important;
 }
 
 a {

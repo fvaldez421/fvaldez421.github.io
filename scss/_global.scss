@@ -38,6 +38,10 @@ h2 {
   font-weight: 500;
   @include heading-font;
   font-size: 1.35rem;
+  color: $orange;
+  > a {
+    color: $orange;
+  }
 }
 
 .list-social-icons {
@@ -80,7 +84,7 @@ h2 {
   height: 43px;
   width: 44px;
   &:hover {
-    filter: grayscale(40%);    
+    filter: grayscale(100%) brightness(40%);
   }
 }
 
@@ -92,28 +96,28 @@ h2 {
 }
 
 .gcp-custom {
-  background-image: url("https://cloud.google.com/_static/0a78ff57b6/images/cloud/cloud-logo.svg");
+  background-image: url("https://www.gstatic.com/devrel-devsite/prod/vfae72444d3bdc8ae13b8cc5631b2eafccb5edbf6e3dc3e733b21af239a5c570e/cloud/images/social-icon-google-cloud-1200-630.png");
   background-repeat: no-repeat;
-  background-size: auto 36px;
-  background-position-x: 3px;
-  filter: grayscale(100%);
-  height: 36px;
-  width: 52px;
+  background-size: 96px auto;
+  background-position-x: -24px;
+  filter: grayscale(100%) brightness(80%);
+  height: 45px;
+  width: 48px;
   &:hover {
-    filter: grayscale(75%);    
+    filter: grayscale(100%) brightness(0%);
   }
 }
 
 .aws-custom {
-  background-image: url("https://a0.awsstatic.com/main/images/logos/aws_smile-header-desktop-en-white_59x35.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png");
   background-repeat: no-repeat;
   background-size: auto 28px;
   background-position-x: 0px;
-  filter: invert(100%) grayscale(100%);
+  filter: grayscale(100%);
   height: 32px;
   width: 50px;
   &:hover {
-    filter: invert(80%) grayscale(10%);    
+    filter: grayscale(100%) brightness(40%);
   }
 }
 

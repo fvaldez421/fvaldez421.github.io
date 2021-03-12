@@ -37,6 +37,11 @@ h2 {
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
   font-size: 1.35rem;
+  color: #01486a;
+}
+
+.subheading > a {
+  color: #01486a;
 }
 
 .list-social-icons a {
@@ -80,7 +85,7 @@ h2 {
 }
 
 .redux-custom:hover {
-  filter: grayscale(40%);
+  filter: grayscale(100%) brightness(40%);
 }
 
 .devicons.devicons-less {
@@ -91,31 +96,31 @@ h2 {
 }
 
 .gcp-custom {
-  background-image: url("https://cloud.google.com/_static/0a78ff57b6/images/cloud/cloud-logo.svg");
+  background-image: url("https://www.gstatic.com/devrel-devsite/prod/vfae72444d3bdc8ae13b8cc5631b2eafccb5edbf6e3dc3e733b21af239a5c570e/cloud/images/social-icon-google-cloud-1200-630.png");
   background-repeat: no-repeat;
-  background-size: auto 36px;
-  background-position-x: 3px;
-  filter: grayscale(100%);
-  height: 36px;
-  width: 52px;
+  background-size: 96px auto;
+  background-position-x: -24px;
+  filter: grayscale(100%) brightness(80%);
+  height: 45px;
+  width: 48px;
 }
 
 .gcp-custom:hover {
-  filter: grayscale(75%);
+  filter: grayscale(100%) brightness(0%);
 }
 
 .aws-custom {
-  background-image: url("https://a0.awsstatic.com/main/images/logos/aws_smile-header-desktop-en-white_59x35.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png");
   background-repeat: no-repeat;
   background-size: auto 28px;
   background-position-x: 0px;
-  filter: invert(100%) grayscale(100%);
+  filter: grayscale(100%);
   height: 32px;
   width: 50px;
 }
 
 .aws-custom:hover {
-  filter: invert(80%) grayscale(10%);
+  filter: grayscale(100%) brightness(40%);
 }
 
 .es-custom {
@@ -154,6 +159,12 @@ h2 {
   right: 0px;
   background-image: linear-gradient(150deg, #ff000000 80%, #ffffff10 20%, #ffffff44);
   pointer-events: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .navbar .navbar-collapse .navbar-nav {
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -234,6 +245,7 @@ section.resume-section .resume-item .text-primary {
   section.resume-section .resume-item .resume-date {
     float: none;
     display: block;
+    text-align: left;
   }
 }
 
@@ -258,7 +270,7 @@ section.resume-section .resume-item .text-primary {
 }
 
 .text-primary {
-  color: #111 !important;
+  color: #343a40 !important;
 }
 
 a {
@@ -267,4 +279,9 @@ a {
 
 a:hover, a:focus, a:active {
   color: black;
+}
+
+.popover .popover-body .btn {
+  padding: .125rem .5rem;
+  font-size: .95rem;
 }

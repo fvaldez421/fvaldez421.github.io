@@ -21,6 +21,12 @@
   }
 }
 
+@media only screen and (max-width: 560px) {
+  .navbar .navbar-collapse .navbar-nav {
+    padding-bottom: 10px;
+  }
+}
+
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
@@ -46,12 +52,10 @@
       display: flex;
       align-items: flex-start;
       flex-grow: 0;
-
       width: 100%;
       margin-bottom: auto;
       .navbar-nav {
         flex-direction: column;
-
         width: 100%;
         .nav-item {
           display: block;

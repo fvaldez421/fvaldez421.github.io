@@ -3,7 +3,7 @@
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $dark !important;
 }
 a {
   color: $primary;
@@ -12,4 +12,9 @@ a {
   &:active {
     color: darken($primary, 15%);
   }
+}
+
+.popover .popover-body .btn {
+  padding: .125rem .5rem;
+  font-size: .95rem;
 }
